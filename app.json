@@ -1,0 +1,43 @@
+{
+  "expo": {
+    "name": "uber",
+    "slug": "uber",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "updates": {
+      "fallbackToCacheTimeout": 0
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.uber",
+      "config":{
+        "googleMapsApiKey" :"AIzaSyD8ZGZEtvsv6dytzcvrfbmBevc28gQWLSw"
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#FFFFFF"
+      },
+      "package":"com.uber",
+      "config" :{
+        "googleMaps":{
+          "apiKey":"AIzaSyD8ZGZEtvsv6dytzcvrfbmBevc28gQWLSw"
+        },
+        "permissions":["ACCESS_COARSE_LOCATION","ACCESS_FINE_LOCATION","FOREGROUND_SERVICE"]
+      }
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    }
+  }
+}

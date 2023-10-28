@@ -1,0 +1,33 @@
+the Google Maps API key is stored in app.json file, as the following example:
+
+    "ios": {
+      "config": {
+        "googleMapsApiKey": "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"
+      }
+    },
+    "android": {
+      "config": {
+        "googleMaps": {
+          "apiKey": "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"
+        }
+      }
+    }
+    Store them in a .env file like this GOOGLE_API_KEY=yourKey.
+Then import to to files as needed with react-native-dotenv package; import { GOOGLE_API_KEY } from 'react-native-dotenv'
+/////
+
+expo install expo-location
+//////
+https://www.latlong.net/convert-address-to-lat-long.html
+
+
+
+pppppppppppppppppppppp
+babel.config.json file add 
+module.exports = function (api) {
+  api.cache(true);
+  return {
+    presets: ['babel-preset-expo'],
+    plugins: ['react-native-reanimated/plugin'],
+  };
+};
